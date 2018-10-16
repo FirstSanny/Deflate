@@ -1,6 +1,8 @@
 module ReductionbasedProlongation
 export prolongationReduction
 
+using LinearAlgebra
+
     function computeTauI(A, F, i)
         aij = 0
         for j ∈ F
@@ -102,8 +104,9 @@ export prolongationReduction
     function prolongationReduction(A)
         n = size(A,1)
 
-        F, C, TauI = greedyCoarsing(A)
-
+        FSet, CSet, TauI = greedyCoarsing(A)
+        F = collect(FSet)
+        C = collect(CSet)
         # Swaps for F
         f = length(F)
         for i in 1:f
@@ -129,7 +132,7 @@ export prolongationReduction
 
         D1 = -1*inv(Diagonal(A[1:f,1:f]))
         TopMatrix = hcat(D1, A[1:f,(f+1):n])
-        return full(transpose(vcat(TopMatrix, hcat(zeros(n-f,f),eye(n-f,n-f)))))
+        return Matrix(transpose(vcat(TopMatrix, hcat(zeros(n-f,f), Matrix{Int64}(I, n-f,n-f)))))
     end
 
 end

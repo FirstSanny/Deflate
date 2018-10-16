@@ -1,6 +1,7 @@
 module Solver
 export solve
 
+using LinearAlgebra
 using IterativeSolvers
 
     # Solves the System Ax=b with de Deflation-Operator R
@@ -18,6 +19,6 @@ using IterativeSolvers
         end
 
 
-        gmres(A, b; tol = 1/100000000, Pl = lufact(PN), log = true)   
+        IterativeSolvers.gmres(A, b; tol = 1/100000000, Pl = LinearAlgebra.lu(PN), log = true)   
     end
 end
