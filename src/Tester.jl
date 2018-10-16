@@ -13,7 +13,7 @@ function getA()
     # mmread("matrices/pde225.mtx")
     # mmread("matrices/gr_30_30.mtx")
     # MatrixMarket.mmread("matrices/bcsstk25.mtx")
-    MatrixMarket.mmread("D:/git/Deflate/src/matrices/fidap005.mtx")
+    MatrixMarket.mmread("matrices/fidap005.mtx")
 end
 
 A = getA()
