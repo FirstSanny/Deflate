@@ -1,7 +1,7 @@
 module ReductionbasedProlongation
 export prolongationReduction
 
-using LinearAlgebra
+    using LinearAlgebra
 
     function computeTauI(A, F, i)
         aij = 0
