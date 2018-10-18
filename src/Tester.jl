@@ -1,5 +1,5 @@
 module Tester
-export test
+export testAllDiagonal
 
     using DataFrames
     using Plots
@@ -11,18 +11,43 @@ export test
     include("Solver.jl")
 
     function getA()
-        # mmread("matrices/bcsstm26.mtx")
-        # mmread("matrices/nos7.mtx")
-        # mmread("matrices/pde225.mtx")
-        # mmread("matrices/gr_30_30.mtx")
         MatrixMarket.mmread("matrices/bcsstk23.mtx")
+    end
+
+    function getTestMatrices()
+            return ["bcsstm26", "bcspwr07", "bcspwr09", "bcsstk23", "bcsstk24", "bcsstk25", "dwt__234", "dwt__992", "gemat11", "gr_30_30", "jgl009", "lap___25", "mbeause", "nnc666", "nos7", "s3dkt3m2", "saylr3", "watt__1"];
+    end
+
+    function testAllDiagonal()
+            for testmatrix in getTestMatrices()
+                    try
+                            testOneDiagonal(testmatrix)
+                    catch
+                            println(string("Fehler bei der Matrix ",testmatrix))
+                    end
+            end
+    end
+
+    function testOneDiagonal(testmatrix)
+            A = MatrixMarket.mmread(string("matrices/", testmatrix, ".mtx"))
+            n = size(A,1)
+            b = ones(Float64, n,1)
+            useM3 = true
+
+            @time x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
+            history1data = history1.data[:resnorm]
+
+            pyplot()
+            plot(history1data, xlabel="iterations", ylabel="res-norm", label=testmatrix, yscale = :log10)
+
+            savefig(string("../auswertungen/diagonalRestriction/", testmatrix, ".png"))
     end
 
     function test()
         A = getA()
         n = size(A,1)
         b = ones(Float64, n,1)
-        useM3 = false
+        useM3 = true
         # solve
         @time x1, history1 = Solver.solve(getA(), b, SimpleProlongations.prolongation1(n), useM3)
         # @time x2, history2 = Solver.solve(getA(), b, SimpleProlongations.prolongation2(n), useM3)

@@ -19,6 +19,6 @@ using IterativeSolvers
         end
 
 
-        IterativeSolvers.gmres!(A, b; tol = 1/100000000, Pl = LinearAlgebra.lu(PN), log = true)   
+        IterativeSolvers.gmres(A, b; tol = 1/100000000, Pl = LinearAlgebra.lu(PN), log = true)   
     end
 end
