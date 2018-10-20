@@ -12,6 +12,8 @@ export testOneDiagonal
     include("ReductionbasedProlongation.jl")
     include("Solver.jl")
 
+    const to = TimerOutput()
+
     function getA()
         MatrixMarket.mmread("matrices/bcsstk23.mtx")
     end
@@ -21,10 +23,10 @@ export testOneDiagonal
     end
 
     function testAllDiagonal()
-            const to = TimerOutput()
+            to = TimerOutput()
             for testmatrix in getTestMatrices()
                     try
-                            testOneDiagonal(testmatrix, to)
+                            testOneDiagonal(testmatrix)
                     catch
                             println(string("Fehler bei der Matrix ",testmatrix))
                     end
@@ -32,7 +34,7 @@ export testOneDiagonal
             print(to)
     end
 
-    function testOneDiagonal(testmatrix, to)
+    function testOneDiagonal(testmatrix)
             println(string("Teste die Matrix ",testmatrix))
 
             A = MatrixMarket.mmread(string("matrices/", testmatrix, ".mtx"))
