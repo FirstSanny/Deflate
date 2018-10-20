@@ -21,18 +21,18 @@ export testOneDiagonal
     end
 
     function testAllDiagonal()
-            reset_timer!()
+            const to = TimerOutput()
             for testmatrix in getTestMatrices()
                     try
-                            testOneDiagonal(testmatrix)
+                            testOneDiagonal(testmatrix, to)
                     catch
                             println(string("Fehler bei der Matrix ",testmatrix))
                     end
             end
-            print_timer()
+            print(to)
     end
 
-    function testOneDiagonal(testmatrix)
+    function testOneDiagonal(testmatrix, to)
             println(string("Teste die Matrix ",testmatrix))
 
             A = MatrixMarket.mmread(string("matrices/", testmatrix, ".mtx"))
@@ -41,7 +41,7 @@ export testOneDiagonal
             b = ones(Float64, n,1)
             useM3 = true
 
-            @timeit string(testmatrix) x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
+            @timeit to string(testmatrix) x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
             println(string("---Berechnung fertig"))
             println(string("---", history1))
             history1data = history1.data[:resnorm]
