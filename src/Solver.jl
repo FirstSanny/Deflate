@@ -32,6 +32,6 @@ using IterativeSolvers
         end
 
 
-        IterativeSolvers.gmres(A, b; tol = 1/100000000, Pl = LinearAlgebra.lu(PN, check = false), log = true)
+        IterativeSolvers.gmres(A, b; tol = 1/1000000, Pl = LinearAlgebra.lu(PN, check = false), maxiter=min(10000, n) log = true)
     end
 end
