@@ -1,0 +1,97 @@
+Teste die Matrix bcsstm26
+---Matrix bcsstm26 eingelesen
+---Berechnung fertig
+---Not converged after 1922 iterations.
+---Plot gespeichert
+Teste die Matrix bcspwr07
+---Matrix bcspwr07 eingelesen
+---pinv zur Berechnung von Q benutzt
+---Berechnung fertig
+---Not converged after 1612 iterations.
+---Plot gespeichert
+Teste die Matrix bcspwr09
+---Matrix bcspwr09 eingelesen
+---pinv zur Berechnung von Q benutzt
+---Berechnung fertig
+---Not converged after 1723 iterations.
+---Plot gespeichert
+Teste die Matrix bcsstk23
+---Matrix bcsstk23 eingelesen
+---Berechnung fertig
+---Not converged after 3134 iterations.
+---Plot gespeichert
+Teste die Matrix bcsstk24
+---Matrix bcsstk24 eingelesen
+---Berechnung fertig
+---Not converged after 3562 iterations.
+---Plot gespeichert
+Teste die Matrix bcsstk25
+---Matrix bcsstk25 eingelesen
+---Berechnung fertig
+---Not converged after 15439 iterations.
+---Plot gespeichert
+Teste die Matrix dwt__234
+---Matrix dwt__234 eingelesen
+---pinv zur Berechnung von Q benutzt
+---Berechnung fertig
+---Not converged after 234 iterations.
+---Plot gespeichert
+Teste die Matrix dwt__992
+---Matrix dwt__992 eingelesen
+---pinv zur Berechnung von Q benutzt
+---Berechnung fertig
+---Not converged after 992 iterations.
+---Plot gespeichert
+Teste die Matrix gemat11
+---Matrix gemat11 eingelesen
+---pinv zur Berechnung von Q benutzt
+---pinv zur Berechnung der Inversen der Diagonalen von A benutzt
+---Berechnung fertig
+---Not converged after 4929 iterations.
+Fehler bei der Matrix gemat11
+Teste die Matrix gr_30_30
+---Matrix gr_30_30 eingelesen
+---Berechnung fertig
+---Converged after 216 iterations.
+---Plot gespeichert
+Teste die Matrix jgl009
+---Matrix jgl009 eingelesen
+---pinv zur Berechnung von Q benutzt
+---pinv zur Berechnung der Inversen der Diagonalen von A benutzt
+---Berechnung fertig
+---Converged after 5 iterations.
+---Plot gespeichert
+Teste die Matrix lap___25
+Fehler bei der Matrix lap___25
+Teste die Matrix mbeause
+---Matrix mbeause eingelesen
+---pinv zur Berechnung von Q benutzt
+---pinv zur Berechnung der Inversen der Diagonalen von A benutzt
+---Berechnung fertig
+---Not converged after 496 iterations.
+Fehler bei der Matrix mbeause
+Teste die Matrix nnc666
+---Matrix nnc666 eingelesen
+---pinv zur Berechnung von Q benutzt
+---pinv zur Berechnung der Inversen der Diagonalen von A benutzt
+---Berechnung fertig
+---Not converged after 666 iterations.
+Fehler bei der Matrix nnc666
+Teste die Matrix nos7
+---Matrix nos7 eingelesen
+---Berechnung fertig
+---Not converged after 729 iterations.
+---Plot gespeichert
+Teste die Matrix s3dkt3m2
+---Matrix s3dkt3m2 eingelesen
+Fehler bei der Matrix s3dkt3m2
+Teste die Matrix saylr3
+---Matrix saylr3 eingelesen
+---Berechnung fertig
+---Not converged after 1000 iterations.
+---Plot gespeichert
+Teste die Matrix watt__1
+---Matrix watt__1 eingelesen
+---Berechnung fertig
+---Not converged after 1856 iterations.
+---Plot gespeichert

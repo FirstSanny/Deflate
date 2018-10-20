@@ -1,9 +1,11 @@
 module Tester
 export testAllDiagonal
+export testOneDiagonal
 
     using DataFrames
     using Plots
     using MatrixMarket
+    using TimerOutputs
 
     include("SimpleProlongations.jl")
     include("AggregationbasedProlongation.jl")
@@ -19,6 +21,7 @@ export testAllDiagonal
     end
 
     function testAllDiagonal()
+            reset_timer!()
             for testmatrix in getTestMatrices()
                     try
                             testOneDiagonal(testmatrix)
@@ -26,21 +29,29 @@ export testAllDiagonal
                             println(string("Fehler bei der Matrix ",testmatrix))
                     end
             end
+            print_timer()
     end
 
     function testOneDiagonal(testmatrix)
+            println(string("Teste die Matrix ",testmatrix))
+
             A = MatrixMarket.mmread(string("matrices/", testmatrix, ".mtx"))
+            println(string("---Matrix ",testmatrix, " eingelesen"))
             n = size(A,1)
             b = ones(Float64, n,1)
             useM3 = true
 
-            @time x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
+            @timeit string(testmatrix) x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
+            println(string("---Berechnung fertig"))
+            println(string("---", history1))
             history1data = history1.data[:resnorm]
 
             pyplot()
             plot(history1data, xlabel="iterations", ylabel="res-norm", label=testmatrix, yscale = :log10)
 
             savefig(string("../auswertungen/diagonalRestriction/", testmatrix, ".png"))
+            println(string("---Plot gespeichert"))
+
     end
 
     function test()

@@ -10,20 +10,28 @@ using IterativeSolvers
 
         P = transpose(R)
 
+        Q = []
         try
             Q = P*inv(R*A*P)*R
         catch
-            println("pinv was used")
+            println("---pinv zur Berechnung von Q benutzt")
             Q = P*pinv(R*A*P)*R
         end
 
         if(useM3)
-            PN = inv(Diagonal(A))*(I - A * Q) + Q
+            InvDiagA = []
+            try
+                InvDiagA = inv(Diagonal(A))
+            catch
+                println("---pinv zur Berechnung der Inversen der Diagonalen von A benutzt")
+                InvDiagA = pinv(Diagonal(A))
+            end
+            PN = InvDiagA*(I - A * Q) + Q
         else
             PN = I - A * Q + Q
         end
 
 
-        IterativeSolvers.gmres(A, b; tol = 1/100000000, Pl = LinearAlgebra.lu(PN), log = true)
+        IterativeSolvers.gmres(A, b; tol = 1/100000000, Pl = LinearAlgebra.lu(PN, check = false), log = true)
     end
 end
