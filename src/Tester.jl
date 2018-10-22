@@ -36,7 +36,7 @@ export testOneDiagonal
                     write(f, "$to \n \n Konvergiert?\n $converged")
             end
             open("../auswertungen/aggregationRestriction/restriction.txt", "w") do f
-                    write(f, "$to \n \n Konvergiert?\n $converged")
+                    write(f, "$to")
             end
 
 
