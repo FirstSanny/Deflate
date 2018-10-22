@@ -101,7 +101,8 @@ export prolongationReduction
         end
     end
 
-    function prolongationReduction(A)
+    function prolongationReduction(origA)
+        A = copy(origA)
         n = size(A,1)
 
         FSet, CSet, TauI = greedyCoarsing(A)
@@ -118,7 +119,7 @@ export prolongationReduction
         for i in f+1:n
             # was already swaped
             if in(C[i-f],1:f)
-                if(in(i,F) && find(x->x==i,F)[1] == F[C[i-f]])
+                if(in(i,F) && findfirst(x->x==i,F) == F[C[i-f]])
                     continue
                 end
                 swapRows(A,i,F[C[i-f]])

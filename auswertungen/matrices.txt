@@ -1,0 +1,15 @@
+BCSPWR07, pattern symmetric indefinite, 1612 x 1612
+BCSPWR09, pattern symmetric indefinite, 1723 x 1723
+NNC666, real unsymmetric, 666 x 666
+DWT 234, pattern symmetric indefinite, 234 x 234
+DWT 992, pattern symmetric indefinite, 992 x 992
+MBEAUSE, real unsymmetric, 496 x 496
+SAYLR3, real unsymmetric, 1000 x 1000
+BCSSTK23, real symmetric indefinite, 3134 x 3134
+BCSSTK24, real symmetric indefinite, 3562 x 3562
+BCSSTK25, real symmetric indefinite, 15439 x 15439
+BCSSTM26, real symmetric positive definite, 1922 x 1922
+WATT 1, real unsymmetric, 1856 x 1856
+NOS7, real symmetric positive definite, 729 x 729
+GEMAT11, real unsymmetric, 4929 x 4929
+GR 30 30, real symmetric positive definite, 900 x 900

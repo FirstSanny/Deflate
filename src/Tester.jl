@@ -17,28 +17,30 @@ export testOneDiagonal
     end
 
     function getTestMatrices()
-            return ["bcsstm26", "bcspwr07", "bcspwr09", "bcsstk23", "bcsstk24", "bcsstk25", "dwt__234", "dwt__992", "gemat11", "gr_30_30", "jgl009", "lap___25", "mbeause", "nnc666", "nos7", "s3dkt3m2", "saylr3", "watt__1"];
+            return ["bcsstm26", "bcspwr07", "bcspwr09", "bcsstk23", "bcsstk24", "bcsstk25", "dwt__234", "dwt__992", "gemat11", "gr_30_30", "jgl009", "mbeause", "nnc666", "nos7", "s3dkt3m2", "saylr3", "watt__1"];
     end
 
     function testAllDiagonal()
             to = TimerOutput()
+            toR = TimerOutput()
             converged = Dict{String,String}()
             for testmatrix in getTestMatrices()
                     try
-                            testOneDiagonal(testmatrix, to, converged)
+                            testOneDiagonal(testmatrix, to, toR, converged)
                     catch
                             println("Fehler bei der Matrix $testmatrix")
                     end
             end
 
-            open("../auswertungen/diagonalRestriction/converged.txt", "w") do f
+            open("../auswertungen/aggregationRestriction/converged.txt", "w") do f
                     write(f, "$to \n \n Konvergiert?\n $converged")
             end
 
             print(to)
+            print(toR)
     end
 
-    function testOneDiagonal(testmatrix, to, converged)
+    function testOneDiagonal(testmatrix, to=TimerOutput(), toR=TimerOutput(), converged=Dict{String,String}())
             println(string("Teste die Matrix ",testmatrix))
 
             A = MatrixMarket.mmread("matrices/$testmatrix.mtx")
@@ -46,18 +48,18 @@ export testOneDiagonal
             n = size(A,1)
             b = ones(Float64, n,1)
             useM3 = true
-
-            @timeit to string(testmatrix) x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
+            @timeit toR string(testmatrix) R = AggregationbasedProlongation.prolongationAggregation(A)
+            println("--- Restriktionsmatrix berechnet")
+            @timeit to string(testmatrix) x1, history1 = Solver.solve(A, b, R, useM3)
             println("--- Berechnung fertig")
             println("--- $history1")
             converged[testmatrix] = "$history1"
 
             history1data = history1.data[:resnorm]
-
             pyplot()
             plot(history1data, xlabel="iterations", ylabel="res-norm", label=testmatrix, yscale = :log10)
 
-            savefig("../auswertungen/diagonalRestriction/$testmatrix.png")
+            savefig("../auswertungen/aggregationRestriction/$testmatrix.png")
             println("--- Plot gespeichert")
 
     end
