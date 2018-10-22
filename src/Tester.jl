@@ -17,7 +17,7 @@ export testOneDiagonal
     end
 
     function getTestMatrices()
-            return ["bcsstm26", "bcspwr07", "bcspwr09", "bcsstk23", "bcsstk24", "bcsstk25", "dwt__234", "dwt__992", "gemat11", "gr_30_30", "jgl009", "mbeause", "nnc666", "nos7", "s3dkt3m2", "saylr3", "watt__1"];
+            return ["bcsstm26", "bcspwr07", "bcspwr09", "bcsstk23", "bcsstk24", "bcsstk25", "dwt__234", "dwt__992", "gemat11", "gr_30_30", "jgl009", "mbeause", "nnc666", "nos7", "saylr3", "watt__1"];
     end
 
     function testAllDiagonal()
