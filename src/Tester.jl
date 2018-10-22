@@ -12,8 +12,6 @@ export testOneDiagonal
     include("ReductionbasedProlongation.jl")
     include("Solver.jl")
 
-    const to = TimerOutput()
-
     function getA()
         MatrixMarket.mmread("matrices/bcsstk23.mtx")
     end
@@ -24,35 +22,43 @@ export testOneDiagonal
 
     function testAllDiagonal()
             to = TimerOutput()
+            converged = Dict{String,String}()
             for testmatrix in getTestMatrices()
                     try
-                            testOneDiagonal(testmatrix)
+                            testOneDiagonal(testmatrix, to, converged)
                     catch
-                            println(string("Fehler bei der Matrix ",testmatrix))
+                            println("Fehler bei der Matrix $testmatrix")
                     end
             end
+
+            open("../auswertungen/diagonalRestriction/converged.txt", "w") do f
+                    write(f, "$to \n \n Konvergiert?\n $converged")
+            end
+
             print(to)
     end
 
-    function testOneDiagonal(testmatrix)
+    function testOneDiagonal(testmatrix, to, converged)
             println(string("Teste die Matrix ",testmatrix))
 
-            A = MatrixMarket.mmread(string("matrices/", testmatrix, ".mtx"))
-            println(string("---Matrix ",testmatrix, " eingelesen"))
+            A = MatrixMarket.mmread("matrices/$testmatrix.mtx")
+            println("--- Matrix $testmatrix eingelesen")
             n = size(A,1)
             b = ones(Float64, n,1)
             useM3 = true
 
             @timeit to string(testmatrix) x1, history1 = Solver.solve(A, b, SimpleProlongations.prolongation1(n), useM3)
-            println(string("---Berechnung fertig"))
-            println(string("---", history1))
+            println("--- Berechnung fertig")
+            println("--- $history1")
+            converged[testmatrix] = "$history1"
+
             history1data = history1.data[:resnorm]
 
             pyplot()
             plot(history1data, xlabel="iterations", ylabel="res-norm", label=testmatrix, yscale = :log10)
 
-            savefig(string("../auswertungen/diagonalRestriction/", testmatrix, ".png"))
-            println(string("---Plot gespeichert"))
+            savefig("../auswertungen/diagonalRestriction/$testmatrix.png")
+            println("--- Plot gespeichert")
 
     end
 
