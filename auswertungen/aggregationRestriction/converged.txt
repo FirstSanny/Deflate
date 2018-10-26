@@ -24,4 +24,21 @@
  [1m───────────────────────────────────────────────────────────────────[22m 
  
  Konvergiert?
- Dict("watt__1"=>"Converged after 1 iterations.","mbeause"=>"Not converged after 10000 iterations.","gr_30_30"=>"Converged after 7401 iterations.","nos7"=>"Not converged after 10000 iterations.","bcsstk25"=>"Not converged after 15439 iterations.","jgl009"=>"Converged after 5 iterations.","dwt__992"=>"Not converged after 10000 iterations.","saylr3"=>"Not converged after 10000 iterations.","bcsstk23"=>"Not converged after 10000 iterations.","bcspwr07"=>"Not converged after 10000 iterations.","nnc666"=>"Not converged after 10000 iterations.","bcsstm26"=>"Not converged after 10000 iterations.","bcsstk24"=>"Not converged after 10000 iterations.","bcspwr09"=>"Not converged after 10000 iterations.","gemat11"=>"Not converged after 10000 iterations.","dwt__234"=>"Converged after 7457 iterations.")
+ Dict(
+"watt__1"=>"Converged after 1 iterations.",
+"mbeause"=>"Not converged after 10000 iterations.",
+"gr_30_30"=>"Converged after 7401 iterations.",
+"nos7"=>"Not converged after 10000 iterations.",
+"bcsstk25"=>"Not converged after 15439 iterations.",
+"jgl009"=>"Converged after 5 iterations.",
+"dwt__992"=>"Not converged after 10000 iterations.",
+"saylr3"=>"Not converged after 10000 iterations.",
+"bcsstk23"=>"Not converged after 10000 iterations.",
+"bcspwr07"=>"Not converged after 10000 iterations.",
+"nnc666"=>"Not converged after 10000 iterations.",
+"bcsstm26"=>"Not converged after 10000 iterations.",
+"bcsstk24"=>"Not converged after 10000 iterations.",
+"bcspwr09"=>"Not converged after 10000 iterations.",
+"gemat11"=>"Not converged after 10000 iterations.",
+"dwt__234"=>"Converged after 7457 iterations."
+)
