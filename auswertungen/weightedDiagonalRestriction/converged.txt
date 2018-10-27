@@ -21,8 +21,23 @@
  watt__1         1    554ms  0.02%   554ms    224MiB  0.44%   224MiB
  dwt__234        1    517ms  0.02%   517ms   13.5MiB  0.03%  13.5MiB
  jgl009          1    334μs  0.00%   334μs   95.1KiB  0.00%  95.1KiB
- s3dkt3m2        1    254μs  0.00%   254μs   30.5GiB  61.2%  30.5GiB
  [1m───────────────────────────────────────────────────────────────────[22m 
  
  Konvergiert?
- Dict("watt__1"=>"Converged after 1 iterations.","mbeause"=>"Not converged after 10000 iterations.","gr_30_30"=>"Converged after 6889 iterations.","nos7"=>"Not converged after 10000 iterations.","bcsstk25"=>"Not converged after 15439 iterations.","jgl009"=>"Converged after 5 iterations.","dwt__992"=>"Not converged after 10000 iterations.","saylr3"=>"Not converged after 10000 iterations.","bcsstk23"=>"Not converged after 10000 iterations.","bcspwr07"=>"Not converged after 10000 iterations.","nnc666"=>"Not converged after 10000 iterations.","bcsstm26"=>"Not converged after 10000 iterations.","bcsstk24"=>"Not converged after 10000 iterations.","bcspwr09"=>"Not converged after 10000 iterations.","gemat11"=>"Not converged after 10000 iterations.","dwt__234"=>"Not converged after 10000 iterations.")
+ Dict(
+"watt__1"=>"Converged after 1 iterations."
+"mbeause"=>"Not converged after 10000 iterations."
+"gr_30_30"=>"Converged after 6889 iterations."
+"nos7"=>"Not converged after 10000 iterations."
+"bcsstk25"=>"Not converged after 15439 iterations."
+"jgl009"=>"Converged after 5 iterations."
+"dwt__992"=>"Not converged after 10000 iterations."
+"saylr3"=>"Not converged after 10000 iterations."
+"bcsstk23"=>"Not converged after 10000 iterations."
+"bcspwr07"=>"Not converged after 10000 iterations."
+"nnc666"=>"Not converged after 10000 iterations."
+"bcsstm26"=>"Not converged after 10000 iterations."
+"bcsstk24"=>"Not converged after 10000 iterations."
+"bcspwr09"=>"Not converged after 10000 iterations."
+"gemat11"=>"Not converged after 10000 iterations."
+"dwt__234"=>"Not converged after 10000 iterations.")
