@@ -14,7 +14,7 @@ using IterativeSolvers
         try
             Q = P*inv(R*A*P)*R
         catch
-            println("---pinv zur Berechnung von Q benutzt")
+            println("+++---pinv zur Berechnung von Q benutzt")
             Q = P*pinv(R*A*P)*R
         end
 
@@ -23,7 +23,7 @@ using IterativeSolvers
             try
                 InvDiagA = inv(Diagonal(A))
             catch
-                println("---pinv zur Berechnung der Inversen der Diagonalen von A benutzt")
+                println("+++---pinv zur Berechnung der Inversen der Diagonalen von A benutzt")
                 InvDiagA = pinv(Diagonal(A))
             end
             PN = InvDiagA*(I - A * Q) + Q

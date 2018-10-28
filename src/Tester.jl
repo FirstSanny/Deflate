@@ -1,6 +1,6 @@
 module Tester
-export testAllDiagonal
-export testOneDiagonal
+export testAll
+export testOne
 
     using DataFrames
     using Plots
@@ -20,82 +20,175 @@ export testOneDiagonal
             return ["bcsstm26", "bcspwr07", "bcspwr09", "bcsstk23", "bcsstk24", "bcsstk25", "dwt__234", "dwt__992", "gemat11", "gr_30_30", "jgl009", "mbeause", "nnc666", "nos7", "saylr3", "watt__1"];
     end
 
-    function testAllDiagonal()
+    function testAll()
+            converged = Dict()
+            history = Dict()
+
+            converged["diagonalRestriction"] = Dict()
+            converged["weightedDiagonalRestriction"] = Dict()
+            converged["aggregationRestriction"] = Dict()
+            converged["reductionRestriction"] = Dict()
+
+            converged["diagonalRestriction"][true] = Dict()
+            converged["weightedDiagonalRestriction"][true] = Dict()
+            converged["aggregationRestriction"][true] = Dict()
+            converged["reductionRestriction"][true] = Dict()
+
+            converged["diagonalRestriction"][false] = Dict()
+            converged["weightedDiagonalRestriction"][false] = Dict()
+            converged["aggregationRestriction"][false] = Dict()
+            converged["reductionRestriction"][false] = Dict()
+
+            history["diagonalRestriction"] = Dict()
+            history["weightedDiagonalRestriction"] = Dict()
+            history["aggregationRestriction"] = Dict()
+            history["reductionRestriction"] = Dict()
+
+            history["diagonalRestriction"][true] = Dict()
+            history["weightedDiagonalRestriction"][true] = Dict()
+            history["aggregationRestriction"][true] = Dict()
+            history["reductionRestriction"][true] = Dict()
+
+            history["diagonalRestriction"][false] = Dict()
+            history["weightedDiagonalRestriction"][false] = Dict()
+            history["aggregationRestriction"][false] = Dict()
+            history["reductionRestriction"][false] = Dict()
+
+            testOneForRes(converged, history, "diagonalRestriction")
+            testOneForRes(converged, history, "weightedDiagonalRestriction")
+            testOneForRes(converged, history, "aggregationRestriction")
+            testOneForRes(converged, history, "reductionRestriction")
+
+            testOneForRes(converged, history, "diagonalRestriction", false)
+            testOneForRes(converged, history, "weightedDiagonalRestriction", false)
+            testOneForRes(converged, history, "aggregationRestriction", false)
+            testOneForRes(converged, history, "reductionRestriction", false)
+
+            printForOneM(history, true)
+            printForOneM(history, false)
+    end
+
+    function testOneForRes(converged, history, method, useM3 = true)
             to = TimerOutput()
             toR = TimerOutput()
-            converged = Dict{String,String}()
+            println("Methode $method")
             for testmatrix in getTestMatrices()
                     try
-                            testOneDiagonal(testmatrix, to, toR, converged)
+                            testOne(testmatrix, method, to, toR, converged[method][useM3], history[method][useM3], useM3)
                     catch
                             println("Fehler bei der Matrix $testmatrix")
                     end
             end
 
-            open("../auswertungen/aggregationRestriction/converged.txt", "w") do f
-                    write(f, "$to \n \n Konvergiert?\n $converged")
+            if(useM3)
+                        M = "M3"
+            else
+                        M = "PN"
             end
-            open("../auswertungen/aggregationRestriction/restriction.txt", "w") do f
+
+            mkpath("../auswertungen/$method/$M")
+
+            open("../auswertungen/$method/$M/converged.txt", "w") do f
+                    write(f, "Konvergiert?\n $converged")
+            end
+
+            open("../auswertungen/$method/$M/timeSolve.txt", "w") do f
                     write(f, "$to")
             end
 
-
-            print(to)
-            print(toR)
+            open("../auswertungen/$method/$M/timeRestriction.txt", "w") do f
+                    write(f, "$toR")
+            end
     end
 
-    function testOneDiagonal(testmatrix, to=TimerOutput(), toR=TimerOutput(), converged=Dict{String,String}())
-            println(string("Teste die Matrix ",testmatrix))
+    function testOne(testmatrix, method, to=TimerOutput(), toR=TimerOutput(), converged=Dict(), history=Dict(), useM3 = true)
+            println("+++ Teste die Matrix $testmatrix")
 
             A = MatrixMarket.mmread("matrices/$testmatrix.mtx")
-            println("--- Matrix $testmatrix eingelesen")
+            println("+++--- Matrix $testmatrix eingelesen")
+
             n = size(A,1)
             b = ones(Float64, n,1)
-            useM3 = true
-            @timeit toR string(testmatrix) R = AggregationbasedProlongation.prolongationAggregation(A)
-            println("--- Restriktionsmatrix berechnet")
+
+            if(method == "diagonalRestriction")
+                        @timeit toR string(testmatrix) R = SimpleProlongations.prolongation1(n)
+            elseif(method == "weightedDiagonalRestriction")
+                        @timeit toR string(testmatrix) R = SimpleProlongations.prolongation2(n)
+            elseif(method == "aggregationRestriction")
+                        @timeit toR string(testmatrix) R = AggregationbasedProlongation.prolongationAggregation(A)
+            else
+                        @timeit toR string(testmatrix) R = ReductionbasedProlongation.prolongationReduction(A)
+            end
+
+            println("+++--- Restriktionsmatrix berechnet")
             @timeit to string(testmatrix) x1, history1 = Solver.solve(A, b, R, useM3)
-            println("--- Berechnung fertig")
-            println("--- $history1")
+            println("+++--- Berechnung fertig")
+            println("+++--- $history1")
             converged[testmatrix] = "$history1"
-
-            history1data = history1.data[:resnorm]
-            pyplot()
-            plot(history1data, xlabel="iterations", ylabel="res-norm", label=testmatrix, yscale = :log10)
-
-            savefig("../auswertungen/aggregationRestriction/$testmatrix.png")
-            println("--- Plot gespeichert")
+            history[testmatrix] = history1.data[:resnorm]
 
     end
 
-    function test()
-        A = getA()
-        n = size(A,1)
-        b = ones(Float64, n,1)
-        useM3 = true
-        # solve
-        @time x1, history1 = Solver.solve(getA(), b, SimpleProlongations.prolongation1(n), useM3)
-        # @time x2, history2 = Solver.solve(getA(), b, SimpleProlongations.prolongation2(n), useM3)
-        # @time x3, history3 = Solver.solve(getA(), b, AggregationbasedProlongation.prolongationAggregation(getA()), useM3)
-        # @time x4, history4 = Solver.solve(getA(), b, ReductionbasedProlongation.prolongationReduction(getA()), useM3)
 
-        # plot
-        #gr()
-        pyplot()
-        history1data = history1.data[:resnorm]
-        # history2data = history2.data[:resnorm]
-        # history3data = history3.data[:resnorm]
-        # history4data = history4.data[:resnorm]
+            function printForOneM(history, useM3)
+                   print("diagonalRestriction", history, true, false, false, false, useM3)
+                   print("weightedDiagonalRestriction", history, false, true, false, false, useM3)
+                   print("aggregationRestriction", history, false, false, true, false, useM3)
+                   print("reductionRestriction", history, false, false, false, true, useM3)
 
-        println(string("res-norm: ", history1data[end]))
-        # println(string("res-norm: ", history2data[end]))
-        # println(string("res-norm: ", history3data[end]))
-        # println(string("res-norm: ", history4data[end]))
+                   print("simpleRestrictions", history, true, true, false, false, useM3)
+                   print("complexRestrictions", history, false, false, true, true, useM3)
 
-        fig = plot(history1data, xlabel="iterations", ylabel="res-norm", label="simple prolongation", yscale = :log10)
-        # plot!(history2data, label="prolongation with weights")
-        # plot!(history3data, label="aggregation-based prolongation")
-        # plot!(history4data, label="reduction-based prolongation")
-        #savefig("prolongations.png")
+                   print("allRestrictions", history, true, true, true, true, useM3)
+            end
+
+    function print(dir, history, useSimple1=false, useSimple2=false, useAggreg=false, useReduc=false, useM3=true)
+                if(useM3)
+                           M = "M3"
+                else
+                           M = "PN"
+                end
+                println("Plot für $dir")
+                for testmatrix in getTestMatrices()
+                           println("+++ Plot mit $testmatrix")
+                           pyplot()
+                           try
+                                       if(useSimple1)
+                                                   plot(history["diagonalRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="diagonalRestriction", yscale = :log10)
+                                                   if(useSimple2)
+                                                               plot!(history["weightedDiagonalRestriction"][useM3][testmatrix], label="weightedDiagonalRestriction")
+                                                   end
+                                                   if(useAggreg)
+                                                               plot!(history["aggregationRestriction"][useM3][testmatrix], label="aggregationRestriction")
+                                                   end
+                                                   if(useReduc)
+                                                               plot!(history["reductionRestriction"][useM3][testmatrix], label="reductionRestriction")
+                                                   end
+                                       end
+
+                                       if(useSimple2)
+                                                   plot(history["weightedDiagonalRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="weightedDiagonalRestriction", yscale = :log10)
+                                       end
+
+                                       if(useAggreg)
+                                                   plot(history["aggregationRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="aggregationRestriction", yscale = :log10)
+                                                   if(useReduc)
+                                                               plot!(history["reductionRestriction"][useM3][testmatrix], label="reductionRestriction")
+                                                   end
+                                       end
+
+                                       if(useReduc)
+                                                   plot(history["reductionRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="reductionRestriction", yscale = :log10)
+                                       end
+
+                                       mkpath("../auswertungen/$dir/$M")
+                                       savefig("../auswertungen/$dir/$M/$testmatrix.png")
+
+                           catch
+                                     println("+++--- Fehler")
+                           end
+                end
+
     end
+
 end
