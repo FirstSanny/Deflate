@@ -153,7 +153,7 @@ export testOne
                            println("+++ Plot mit $testmatrix")
                            pyplot()
                            try
-                                       if(useSimple1)
+                                       if useSimple1
                                                    plot(history["diagonalRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="diagonalRestriction", yscale = :log10)
                                                    if(useSimple2)
                                                                plot!(history["weightedDiagonalRestriction"][useM3][testmatrix], label="weightedDiagonalRestriction")
@@ -164,20 +164,14 @@ export testOne
                                                    if(useReduc)
                                                                plot!(history["reductionRestriction"][useM3][testmatrix], label="reductionRestriction")
                                                    end
-                                       end
-
-                                       if(useSimple2)
+                                       elseif useSimple2
                                                    plot(history["weightedDiagonalRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="weightedDiagonalRestriction", yscale = :log10)
-                                       end
-
-                                       if(useAggreg)
+                                       elseif useAggreg
                                                    plot(history["aggregationRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="aggregationRestriction", yscale = :log10)
                                                    if(useReduc)
                                                                plot!(history["reductionRestriction"][useM3][testmatrix], label="reductionRestriction")
                                                    end
-                                       end
-
-                                       if(useReduc)
+                                       elseif useReduc
                                                    plot(history["reductionRestriction"][useM3][testmatrix], xlabel="iterations", ylabel="res-norm", label="reductionRestriction", yscale = :log10)
                                        end
 
