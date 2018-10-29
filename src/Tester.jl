@@ -66,24 +66,28 @@ export testOne
 
             printForOneM(history, true)
             printForOneM(history, false)
+
+            printM3PN("diagonalRestriction", history)
+            printM3PN("weightedDiagonalRestriction", history)
+            printM3PN("aggregationRestriction", history)
+            printM3PN("reductionRestriction", history)
     end
 
     function testOneForRes(converged, history, method, useM3 = true)
             to = TimerOutput()
             toR = TimerOutput()
-            println("Methode $method")
+            if(useM3)
+                        M = "M3"
+            else
+                        M = "PN"
+            end
+            println("Methode $method mit $M")
             for testmatrix in getTestMatrices()
                     try
                             testOne(testmatrix, method, to, toR, converged[method][useM3], history[method][useM3], useM3)
                     catch
                             println("Fehler bei der Matrix $testmatrix")
                     end
-            end
-
-            if(useM3)
-                        M = "M3"
-            else
-                        M = "PN"
             end
 
             mkpath("../auswertungen/$method/$M")
@@ -148,7 +152,7 @@ export testOne
                 else
                            M = "PN"
                 end
-                println("Plot für $dir")
+                println("Plot für $dir mit $M")
                 for testmatrix in getTestMatrices()
                            println("+++ Plot mit $testmatrix")
                            pyplot()
@@ -177,6 +181,42 @@ export testOne
 
                                        mkpath("../auswertungen/$dir/$M")
                                        savefig("../auswertungen/$dir/$M/$testmatrix.png")
+
+                           catch
+                                     println("+++ --- Fehler")
+                           end
+                end
+
+    end
+
+
+    function printM3PN(dir, history)
+                if(useM3)
+                           M = "M3"
+                else
+                           M = "PN"
+                end
+                println("Plot für $dir mit beiden Vorkondtionierern")
+                for testmatrix in getTestMatrices()
+                           println("+++ Plot mit $testmatrix")
+                           pyplot()
+                           try
+                                       if dir == "diagonalRestriction"
+                                           plot(history["diagonalRestriction"][true][testmatrix], xlabel="iterations", ylabel="res-norm", label="M3", yscale = :log10)
+                                           plot!(history["diagonalRestriction"][false][testmatrix], label="PN")
+                                       elseif dir == "weightedDiagonalRestriction"
+                                           plot(history["weightedDiagonalRestriction"][true][testmatrix], xlabel="iterations", ylabel="res-norm", label="M3", yscale = :log10)
+                                           plot!(history["weightedDiagonalRestriction"][false][testmatrix], label="PN")
+                                       elseif dir == "aggregationRestriction"
+                                           plot(history["aggregationRestriction"][true][testmatrix], xlabel="iterations", ylabel="res-norm", label="M3", yscale = :log10)
+                                           plot!(history["aggregationRestriction"][false][testmatrix], label="PN")
+                                       else
+                                           plot(history["reductionRestriction"][true][testmatrix], xlabel="iterations", ylabel="res-norm", label="M3", yscale = :log10)
+                                           plot!(history["reductionRestriction"][false][testmatrix], label="PN")
+                                       end
+
+                                       mkpath("../auswertungen/$dir/both")
+                                       savefig("../auswertungen/$dir/both/$testmatrix.png")
 
                            catch
                                      println("+++ --- Fehler")
