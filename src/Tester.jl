@@ -105,7 +105,7 @@ export testOne
             println("+++ Teste die Matrix $testmatrix")
 
             A = MatrixMarket.mmread("matrices/$testmatrix.mtx")
-            println("+++--- Matrix $testmatrix eingelesen")
+            println("+++ --- Matrix $testmatrix eingelesen")
 
             n = size(A,1)
             b = ones(Float64, n,1)
@@ -120,10 +120,10 @@ export testOne
                         @timeit toR string(testmatrix) R = ReductionbasedProlongation.prolongationReduction(A)
             end
 
-            println("+++--- Restriktionsmatrix berechnet")
+            println("+++ --- Restriktionsmatrix berechnet")
             @timeit to string(testmatrix) x1, history1 = Solver.solve(A, b, R, useM3)
-            println("+++--- Berechnung fertig")
-            println("+++--- $history1")
+            println("+++ --- Berechnung fertig")
+            println("+++ --- $history1")
             converged[testmatrix] = "$history1"
             history[testmatrix] = history1.data[:resnorm]
 
@@ -179,7 +179,7 @@ export testOne
                                        savefig("../auswertungen/$dir/$M/$testmatrix.png")
 
                            catch
-                                     println("+++--- Fehler")
+                                     println("+++ --- Fehler")
                            end
                 end
 
