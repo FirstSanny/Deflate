@@ -95,7 +95,12 @@ export testOne
             mkpath("../auswertungen/$method/$M")
 
             open("../auswertungen/$method/$M/converged.txt", "w") do f
-                    write(f, "Konvergiert?\n $localconverged")
+                    conv = "";
+                    for k in keys(localconverged)
+                        dict = localconverged[k]
+                        conv = "$conv $k => $dict \n"
+                    end
+                    write(f, "Konvergiert?\n $conv")
             end
 
             open("../auswertungen/$method/$M/timeSolve.txt", "w") do f
