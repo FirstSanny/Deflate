@@ -82,9 +82,11 @@ export testOne
                         M = "PN"
             end
             println("Methode $method mit $M")
+
+            localconverged = converged[method][useM3]
             for testmatrix in getTestMatrices()
                     try
-                            testOne(testmatrix, method, to, toR, converged[method][useM3], history[method][useM3], useM3)
+                            testOne(testmatrix, method, to, toR, localconverged, history[method][useM3], useM3)
                     catch
                             println("Fehler bei der Matrix $testmatrix")
                     end
@@ -93,7 +95,7 @@ export testOne
             mkpath("../auswertungen/$method/$M")
 
             open("../auswertungen/$method/$M/converged.txt", "w") do f
-                    write(f, "Konvergiert?\n $converged")
+                    write(f, "Konvergiert?\n $localconverged")
             end
 
             open("../auswertungen/$method/$M/timeSolve.txt", "w") do f
