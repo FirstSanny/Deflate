@@ -198,11 +198,6 @@ export testOne
 
 
     function printM3PN(dir, history)
-                if(useM3)
-                           M = "M3"
-                else
-                           M = "PN"
-                end
                 println("Plot für $dir mit beiden Vorkondtionierern")
                 for testmatrix in getTestMatrices()
                            println("+++ Plot mit $testmatrix")
