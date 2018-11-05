@@ -131,7 +131,14 @@ export prolongationReduction
             end
         end
 
-        D1 = -1*inv(Diagonal(A[1:f,1:f]))
+
+        D1 = []
+        try
+            D1 = -1*inv(Diagonal(A[1:f,1:f]))
+        catch
+            println("+++ ---pinv zur Berechnung der Inversen der Diagonalen von A benutzt")
+            D1 = -1*pinv(Diagonal(A[1:f,1:f]))
+        end
         TopMatrix = hcat(D1, A[1:f,(f+1):n])
         return Matrix(transpose(vcat(TopMatrix, hcat(zeros(n-f,f), Matrix{Int64}(I, n-f,n-f)))))
     end
