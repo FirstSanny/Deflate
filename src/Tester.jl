@@ -1,6 +1,6 @@
 module Tester
 export testAll
-export testOne
+export testOneForRes
 
     using DataFrames
     using Plots
