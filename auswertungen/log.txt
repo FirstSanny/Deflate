@@ -1,0 +1,1030 @@
+Methode diagonalRestriction mit M3
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2142 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 4767 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5106 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 6261 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 7069 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Not converged after 30878 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 505 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1472 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1841 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Converged after 13 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1357 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2058 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3469 iterations.
+Methode weightedDiagonalRestriction mit M3
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3978 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5019 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5339 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 6118 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 7051 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Not converged after 30878 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 513 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1489 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1838 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Converged after 14 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1126 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1549 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2056 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3458 iterations.
+Methode aggregationRestriction mit M3
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2024 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5030 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5356 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 6710 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 7123 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Not converged after 30878 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 517 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1488 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1831 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Converged after 13 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1503 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 2057 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3468 iterations.
+Methode reductionRestriction mit M3
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2026 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5015 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5349 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5740 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 6646 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 30251 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 482 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1490 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1831 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Converged after 14 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1240 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3458 iterations.
+Methode diagonalRestriction mit PN
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2897 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 4767 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5106 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 4479 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5299 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 22751 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 505 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1472 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5076 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1826 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 13 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 946 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1256 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1450 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2062 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3452 iterations.
+Methode weightedDiagonalRestriction mit PN
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3849 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5019 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5339 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 4702 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5384 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 23115 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 513 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1489 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 9870 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1836 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 14 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1185 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1351 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1523 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3025 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3469 iterations.
+Methode aggregationRestriction mit PN
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2025 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5030 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5356 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 4843 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5501 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 23079 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 517 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1488 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 9861 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1831 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 14 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1276 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1437 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1465 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 3234 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3476 iterations.
+Methode reductionRestriction mit PN
++++ Teste die Matrix bcsstm26
++++ --- Matrix bcsstm26 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 2028 iterations.
++++ Teste die Matrix bcspwr07
++++ --- Matrix bcspwr07 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5015 iterations.
++++ Teste die Matrix bcspwr09
++++ --- Matrix bcspwr09 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 5349 iterations.
++++ Teste die Matrix bcsstk23
++++ --- Matrix bcsstk23 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 4238 iterations.
++++ Teste die Matrix bcsstk24
++++ --- Matrix bcsstk24 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 5502 iterations.
++++ Teste die Matrix bcsstk25
++++ --- Matrix bcsstk25 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 23766 iterations.
++++ Teste die Matrix dwt__234
++++ --- Matrix dwt__234 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 482 iterations.
++++ Teste die Matrix dwt__992
++++ --- Matrix dwt__992 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1490 iterations.
++++ Teste die Matrix gemat11
++++ --- Matrix gemat11 eingelesen
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 9877 iterations.
++++ Teste die Matrix gr_30_30
++++ --- Matrix gr_30_30 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1831 iterations.
++++ Teste die Matrix jgl009
++++ --- Matrix jgl009 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 14 iterations.
++++ Teste die Matrix mbeause
++++ --- Matrix mbeause eingelesen
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1037 iterations.
++++ Teste die Matrix nnc666
++++ --- Matrix nnc666 eingelesen
++++ --- pinv zur Berechnung der Inversen der Diagonalen von A benutzt
++++ --- Restriktionsmatrix berechnet
++++ --- pinv zur Berechnung von Q benutzt
++++ --- Berechnung fertig
++++ --- Converged after 1317 iterations.
++++ Teste die Matrix nos7
++++ --- Matrix nos7 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 1232 iterations.
++++ Teste die Matrix saylr3
++++ --- Matrix saylr3 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Not converged after 10000 iterations.
++++ Teste die Matrix watt__1
++++ --- Matrix watt__1 eingelesen
++++ --- Restriktionsmatrix berechnet
++++ --- Berechnung fertig
++++ --- Converged after 3454 iterations.
+Plot für diagonalRestriction mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ --- Fehler
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ --- Fehler
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für weightedDiagonalRestriction mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für aggregationRestriction mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ --- Fehler
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ --- Fehler
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für reductionRestriction mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ --- Fehler
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ --- Fehler
++++ Plot mit nos7
++++ Plot mit saylr3
++++ --- Fehler
++++ Plot mit watt__1
+Plot für simpleRestrictions mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für complexRestrictions mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ --- Fehler
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ --- Fehler
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für allRestrictions mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für diagonalRestriction mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für weightedDiagonalRestriction mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für aggregationRestriction mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für reductionRestriction mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ --- Fehler
++++ Plot mit watt__1
+Plot für simpleRestrictions mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für complexRestrictions mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für allRestrictions mit PN
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für diagonalRestriction mit beiden Vorkondtionierern
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für weightedDiagonalRestriction mit beiden Vorkondtionierern
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für aggregationRestriction mit beiden Vorkondtionierern
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot für reductionRestriction mit beiden Vorkondtionierern
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ --- Fehler
++++ Plot mit watt__1
