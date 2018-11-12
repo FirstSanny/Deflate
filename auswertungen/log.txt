@@ -91,6 +91,11 @@ Methode diagonalRestriction mit M3
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3469 iterations.
+
+
+
+
+
 Methode weightedDiagonalRestriction mit M3
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -178,6 +183,11 @@ Methode weightedDiagonalRestriction mit M3
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3458 iterations.
+
+
+
+
+
 Methode aggregationRestriction mit M3
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -704,7 +714,7 @@ Methode reductionRestriction mit PN
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3454 iterations.
-Plot für diagonalRestriction mit M3
+Plot fÃ¼r diagonalRestriction mit M3
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -724,7 +734,7 @@ Plot für diagonalRestriction mit M3
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für weightedDiagonalRestriction mit M3
+Plot fÃ¼r weightedDiagonalRestriction mit M3
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -742,66 +752,7 @@ Plot für weightedDiagonalRestriction mit M3
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für aggregationRestriction mit M3
-+++ Plot mit bcsstm26
-+++ Plot mit bcspwr07
-+++ Plot mit bcspwr09
-+++ Plot mit bcsstk23
-+++ Plot mit bcsstk24
-+++ Plot mit bcsstk25
-+++ Plot mit dwt__234
-+++ Plot mit dwt__992
-+++ Plot mit gemat11
-+++ --- Fehler
-+++ Plot mit gr_30_30
-+++ Plot mit jgl009
-+++ Plot mit mbeause
-+++ --- Fehler
-+++ Plot mit nnc666
-+++ --- Fehler
-+++ Plot mit nos7
-+++ Plot mit saylr3
-+++ Plot mit watt__1
-Plot für reductionRestriction mit M3
-+++ Plot mit bcsstm26
-+++ Plot mit bcspwr07
-+++ Plot mit bcspwr09
-+++ Plot mit bcsstk23
-+++ Plot mit bcsstk24
-+++ Plot mit bcsstk25
-+++ Plot mit dwt__234
-+++ Plot mit dwt__992
-+++ Plot mit gemat11
-+++ --- Fehler
-+++ Plot mit gr_30_30
-+++ Plot mit jgl009
-+++ Plot mit mbeause
-+++ --- Fehler
-+++ Plot mit nnc666
-+++ --- Fehler
-+++ Plot mit nos7
-+++ Plot mit saylr3
-+++ --- Fehler
-+++ Plot mit watt__1
-Plot für simpleRestrictions mit M3
-+++ Plot mit bcsstm26
-+++ Plot mit bcspwr07
-+++ Plot mit bcspwr09
-+++ Plot mit bcsstk23
-+++ Plot mit bcsstk24
-+++ Plot mit bcsstk25
-+++ Plot mit dwt__234
-+++ Plot mit dwt__992
-+++ Plot mit gemat11
-+++ Plot mit gr_30_30
-+++ Plot mit jgl009
-+++ Plot mit mbeause
-+++ --- Fehler
-+++ Plot mit nnc666
-+++ Plot mit nos7
-+++ Plot mit saylr3
-+++ Plot mit watt__1
-Plot für complexRestrictions mit M3
+Plot fÃ¼r aggregationRestriction mit M3
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -821,7 +772,28 @@ Plot für complexRestrictions mit M3
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für allRestrictions mit M3
+Plot fÃ¼r reductionRestriction mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ --- Fehler
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ --- Fehler
++++ Plot mit nos7
++++ Plot mit saylr3
++++ --- Fehler
++++ Plot mit watt__1
+Plot fÃ¼r simpleRestrictions mit M3
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -839,7 +811,45 @@ Plot für allRestrictions mit M3
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für diagonalRestriction mit PN
+Plot fÃ¼r complexRestrictions mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ --- Fehler
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ --- Fehler
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot fÃ¼r allRestrictions mit M3
++++ Plot mit bcsstm26
++++ Plot mit bcspwr07
++++ Plot mit bcspwr09
++++ Plot mit bcsstk23
++++ Plot mit bcsstk24
++++ Plot mit bcsstk25
++++ Plot mit dwt__234
++++ Plot mit dwt__992
++++ Plot mit gemat11
++++ Plot mit gr_30_30
++++ Plot mit jgl009
++++ Plot mit mbeause
++++ --- Fehler
++++ Plot mit nnc666
++++ Plot mit nos7
++++ Plot mit saylr3
++++ Plot mit watt__1
+Plot fÃ¼r diagonalRestriction mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -856,7 +866,7 @@ Plot für diagonalRestriction mit PN
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für weightedDiagonalRestriction mit PN
+Plot fÃ¼r weightedDiagonalRestriction mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -873,7 +883,7 @@ Plot für weightedDiagonalRestriction mit PN
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für aggregationRestriction mit PN
+Plot fÃ¼r aggregationRestriction mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -890,7 +900,7 @@ Plot für aggregationRestriction mit PN
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für reductionRestriction mit PN
+Plot fÃ¼r reductionRestriction mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -908,7 +918,7 @@ Plot für reductionRestriction mit PN
 +++ Plot mit saylr3
 +++ --- Fehler
 +++ Plot mit watt__1
-Plot für simpleRestrictions mit PN
+Plot fÃ¼r simpleRestrictions mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -925,7 +935,7 @@ Plot für simpleRestrictions mit PN
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für complexRestrictions mit PN
+Plot fÃ¼r complexRestrictions mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -942,7 +952,7 @@ Plot für complexRestrictions mit PN
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für allRestrictions mit PN
+Plot fÃ¼r allRestrictions mit PN
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -959,7 +969,7 @@ Plot für allRestrictions mit PN
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für diagonalRestriction mit beiden Vorkondtionierern
+Plot fÃ¼r diagonalRestriction mit beiden Vorkondtionierern
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -976,7 +986,7 @@ Plot für diagonalRestriction mit beiden Vorkondtionierern
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für weightedDiagonalRestriction mit beiden Vorkondtionierern
+Plot fÃ¼r weightedDiagonalRestriction mit beiden Vorkondtionierern
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -993,7 +1003,7 @@ Plot für weightedDiagonalRestriction mit beiden Vorkondtionierern
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für aggregationRestriction mit beiden Vorkondtionierern
+Plot fÃ¼r aggregationRestriction mit beiden Vorkondtionierern
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
@@ -1010,7 +1020,7 @@ Plot für aggregationRestriction mit beiden Vorkondtionierern
 +++ Plot mit nos7
 +++ Plot mit saylr3
 +++ Plot mit watt__1
-Plot für reductionRestriction mit beiden Vorkondtionierern
+Plot fÃ¼r reductionRestriction mit beiden Vorkondtionierern
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
 +++ Plot mit bcspwr09
