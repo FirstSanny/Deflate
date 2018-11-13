@@ -274,6 +274,10 @@ Methode aggregationRestriction mit M3
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3468 iterations.
+
+
+
+
 Methode reductionRestriction mit M3
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -369,6 +373,10 @@ Methode reductionRestriction mit M3
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3458 iterations.
+
+
+
+
 Methode diagonalRestriction mit PN
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -458,6 +466,11 @@ Methode diagonalRestriction mit PN
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3452 iterations.
+
+
+
+
+
 Methode weightedDiagonalRestriction mit PN
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -541,6 +554,11 @@ Methode weightedDiagonalRestriction mit PN
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3469 iterations.
+
+
+
+
+
 Methode aggregationRestriction mit PN
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -623,6 +641,10 @@ Methode aggregationRestriction mit PN
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3476 iterations.
+
+
+
+
 Methode reductionRestriction mit PN
 +++ Teste die Matrix bcsstm26
 +++ --- Matrix bcsstm26 eingelesen
@@ -714,6 +736,9 @@ Methode reductionRestriction mit PN
 +++ --- Restriktionsmatrix berechnet
 +++ --- Berechnung fertig
 +++ --- Converged after 3454 iterations.
+
+
+
 Plot für diagonalRestriction mit M3
 +++ Plot mit bcsstm26
 +++ Plot mit bcspwr07
